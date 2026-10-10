@@ -1,0 +1,5 @@
+# TODO: replace the address below with your real website address after deploying.
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml

@@ -37,16 +37,16 @@
    ========================================================================== */
 
 window.STRYX_PORTFOLIO = [
-  {
-    id: "demo-anime",
-    title: "Anime Recap — sample slot",
-    category: "anime",
-    youtubeId: "",
+    {
+    id: "manhwa-1",
+    title: "He Became a High School Principal With a God-Tier System… ! | Manhwa Explained",
+    category: "manhwa",
+    youtubeId: "kRtwZgoFVvA",
     youtubeUrl: "",
     videoSrc: "",
     thumbnail: "",
     thumbAlt: "",
-    placeholder: true,
+    placeholder: false,
   },
   {
     id: "demo-manga",

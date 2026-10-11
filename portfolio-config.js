@@ -47,7 +47,7 @@ window.STRYX_PORTFOLIO = [
     thumbnail: "",
     thumbAlt: "",
     placeholder: false,
-  }
+  },
   {
     id: "manhwa-2",
     title: "He Became a High School Principal With a God-Tier System… ! | Manhwa Explained (Part 2)",

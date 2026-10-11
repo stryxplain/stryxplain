@@ -97,11 +97,11 @@ window.STRYX_I18N = {
     "pricing.title": "Clear starting rates in rupees",
     "pricing.sub":
       "All prices are in Indian rupees (₹) and shown as starting rates. The final price may depend on project requirements, source materials, complexity and agreed deliverables.",
-    "pricing.explainTitle": "How per-minute pricing works",
+    "pricing.explainTitle": "How per-hour pricing works",
     "pricing.explainText":
-      "Per-minute rates are based on the duration of the finished video, not on the hours spent editing.",
+      "Rates are per hour of the finished video's duration, not the time spent editing.",
     "pricing.from": "Starting at",
-    "pricing.unit.minute": "per finished video minute",
+    "pricing.unit.minute": "per finished video hour",
     "pricing.unit.thumbs": "for 3 different thumbnail designs for one video",
     "pricing.g.hinglish": "Hindi / Hinglish Editing",
     "pricing.g.english": "English Editing with Subtitles",
@@ -142,13 +142,13 @@ window.STRYX_I18N = {
       "I focus on Anime, Manga and Manhwa recap and explanation videos, English videos with subtitles, and custom editing projects. I also design YouTube thumbnails.",
     "faq.q2": "Do you edit Anime, Manga and Manhwa recap videos?",
     "faq.a2":
-      "Yes. For Hindi / Hinglish videos, rates start at ₹300 per finished video minute for Anime, ₹310 for Manga and ₹320 for Manhwa.",
+      "Yes. For Hindi / Hinglish videos, rates start at ₹300 per finished video hour for Anime, ₹310 for Manga and ₹320 for Manhwa.",
     "faq.q3": "Do you offer English subtitles?",
     "faq.a3":
-      "Yes. English editing with subtitles starts at ₹450 per finished video minute for Anime and ₹475 for Manga and Manhwa.",
+      "Yes. English editing with subtitles starts at ₹450 per finished video hour for Anime and ₹475 for Manga and Manhwa.",
     "faq.q4": "How is the editing price calculated?",
     "faq.a4":
-      "Per-minute rates are based on the duration of the finished video, not the hours spent editing. These are starting rates. The final price may depend on project requirements, source materials, complexity and agreed deliverables.",
+      "Rates are per hour of the finished video's duration, not the time spent editing. These are starting rates. The final price may depend on project requirements, source materials, complexity and agreed deliverables.",
     "faq.q5": "Can I request a custom project quote?",
     "faq.a5":
       "Yes. If your project doesn't fit the listed services, message me on WhatsApp with what you need and ask for a custom quote.",
@@ -293,11 +293,11 @@ window.STRYX_I18N = {
     "pricing.title": "Rupees mein saaf starting rates",
     "pricing.sub":
       "Sabhi prices Indian rupees (₹) mein hain aur starting rates ke roop mein dikhaye gaye hain. Final price project requirements, source materials, complexity aur tay hue deliverables par depend kar sakta hai.",
-    "pricing.explainTitle": "Per-minute pricing kaise kaam karti hai",
+    "pricing.explainTitle": "Per-hour pricing kaise kaam karti hai",
     "pricing.explainText":
-      "Per-minute rate finished video ki duration ke hisaab se hota hai, editing mein lage ghanton ke hisaab se nahi.",
+      "Rate finished video ki duration ke har ghante ke hisaab se hota hai, editing mein lage time ke hisaab se nahi.",
     "pricing.from": "Starting at",
-    "pricing.unit.minute": "per finished video minute",
+    "pricing.unit.minute": "per finished video hour",
     "pricing.unit.thumbs": "ek video ke liye 3 alag thumbnail designs ke liye",
     "pricing.g.hinglish": "Hindi / Hinglish Editing",
     "pricing.g.english": "Subtitles Ke Saath English Editing",
@@ -338,13 +338,13 @@ window.STRYX_I18N = {
       "Main Anime, Manga aur Manhwa recap aur explanation videos, subtitles ke saath English videos aur custom editing projects par focus karta hoon. Main YouTube thumbnails bhi design karta hoon.",
     "faq.q2": "Kya aap Anime, Manga aur Manhwa recap videos edit karte hain?",
     "faq.a2":
-      "Haan. Hindi / Hinglish videos ke liye rates ₹300 per finished video minute (Anime), ₹310 (Manga) aur ₹320 (Manhwa) se shuru hote hain.",
+      "Haan. Hindi / Hinglish videos ke liye rates ₹300 per finished video hour (Anime), ₹310 (Manga) aur ₹320 (Manhwa) se shuru hote hain.",
     "faq.q3": "Kya aap English subtitles dete hain?",
     "faq.a3":
-      "Haan. Subtitles ke saath English editing Anime ke liye ₹450 aur Manga aur Manhwa ke liye ₹475 per finished video minute se shuru hoti hai.",
+      "Haan. Subtitles ke saath English editing Anime ke liye ₹450 aur Manga aur Manhwa ke liye ₹475 per finished video hour se shuru hoti hai.",
     "faq.q4": "Editing ka price kaise calculate hota hai?",
     "faq.a4":
-      "Per-minute rate finished video ki duration par based hota hai, editing mein lage ghanton par nahi. Yeh starting rates hain. Final price project requirements, source materials, complexity aur tay hue deliverables par depend kar sakta hai.",
+      "Rate finished video ki duration ke har ghante par based hota hai, editing mein lage time par nahi. Yeh starting rates hain. Final price project requirements, source materials, complexity aur tay hue deliverables par depend kar sakta hai.",
     "faq.q5": "Kya main custom project quote maang sakta hoon?",
     "faq.a5":
       "Haan. Agar aapka project listed services mein fit nahi hota, to WhatsApp par apni zarurat batayein aur custom quote maangein.",

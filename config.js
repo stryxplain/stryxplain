@@ -50,7 +50,7 @@ window.STRYX_SERVICES = [
 
 /* ---------- 3. Pricing (INR, starting rates) ----------
    To change a price, edit the `price` number only.
-   unit: "minute" = per finished video minute
+   unit: "minute" = per finished video HOUR (internal name kept as "minute"; only the text below is shown to visitors)
          "thumbs" = for 3 different thumbnail designs for one video
    waName: English name used in the WhatsApp quote message.
 */
@@ -81,7 +81,7 @@ window.STRYX_PRICING = {
   ],
   // English text of each unit, used only inside WhatsApp messages.
   unitEnglish: {
-    minute: "per finished video minute",
+    minute: "per finished video hour",
     thumbs: "for 3 different thumbnail designs for one video",
   },
   customQuoteMessage:

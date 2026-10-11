@@ -16,3 +16,4 @@ portfolio-config.js mein sirf file ka naam likhein (jaise "my-sample.mp4").
 
 Deploy: GitHub repository -> Settings -> Pages -> Deploy from a branch -> main -> / (root) -> Save.
 Live hone ke baad index.html, robots.txt, sitemap.xml mein YOUR-USERNAME / YOUR-REPO ko apne asli address se badlein.
+.

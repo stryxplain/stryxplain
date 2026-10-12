@@ -60,9 +60,9 @@ window.STRYX_PRICING = {
     {
       id: "hinglish",
       items: [
-        { id: "hAnime", waName: "Anime Recap Editing (Hindi / Hinglish)", price: 300, unit: "minute" },
-        { id: "hManga", waName: "Manga Recap Editing (Hindi / Hinglish)", price: 310, unit: "minute" },
-        { id: "hManhwa", waName: "Manhwa Recap Editing (Hindi / Hinglish)", price: 320, unit: "minute" },
+        { id: "hAnime", waName: "Anime Recap Editing (Hindi / Hinglish)", price: 300, unit: "hours" },
+        
+        { id: "hManhwa", waName: "Manhwa Recap Editing (Hindi / Hinglish)", price: 320, unit: "hours" },
       ],
     },
     {

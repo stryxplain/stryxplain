@@ -179,7 +179,8 @@
             <p class="section-sub" data-i18n="portfolio.sub">Browse by category. Click play on a sample to watch it.</p>
           </header>
           <p class="notice" id="portfolio-notice" hidden data-i18n="portfolio.notice">
-            Cards marked “Demo placeholder” are layout examples only. They are actual client work. Real samples will.
+            Cards marked “Demo placeholder” are layout examples only. They are not actual client work. Real samples will
+            replace them.
           </p>
           <div class="filters" id="portfolio-filters" role="group" aria-label="Filter projects by category" data-i18n-aria="portfolio.filterLabel"></div>
           <div class="grid grid-3" id="portfolio-grid" aria-live="polite"></div>
@@ -200,9 +201,9 @@
           <div class="explain">
             <span data-icon="clock-info"></span>
             <p>
-              <strong data-i18n="pricing.explainTitle">How per-hours pricing works</strong><br />
+              <strong data-i18n="pricing.explainTitle">How per-hour pricing works</strong><br />
               <span data-i18n="pricing.explainText">
-                Per-minute rates are based on the duration of the finished video, not on the hours spent editing.
+                Rates are per hour of the finished video's duration, not the time spent editing.
               </span>
             </p>
           </div>
@@ -264,11 +265,11 @@
             <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
             <h2 id="contact-title" data-i18n="contact.title">Let's discuss your project</h2>
             <p class="section-sub" data-i18n="contact.sub">
-              WhatsApp is the fastest way to reach me. Tap a button below or fill in the form to start a chat.
+              WhatsApp is the fastest way to reach me. Tap a button below to start a chat.
             </p>
           </header>
 
-          <div class="contact-grid">
+          <div class="contact-grid contact-only">
             <div class="contact-cards">
               <a class="card contact-card" id="contact-wa" target="_blank" rel="noopener noreferrer" href="#contact">
                 <span class="icon-wrap" data-icon="whatsapp"></span>
@@ -294,59 +295,6 @@
               </a>
               <p class="cc-brand">stryXplain</p>
             </div>
-
-            <form class="card form" id="inquiry-form" novalidate aria-labelledby="form-title">
-              <h3 id="form-title" data-i18n="contact.formTitle">Project inquiry</h3>
-
-              <div class="field">
-                <label for="f-name" data-i18n="contact.f.name">Your name</label>
-                <input id="f-name" name="name" type="text" autocomplete="name" maxlength="80" data-i18n-placeholder="contact.ph.name" placeholder="e.g. Rahul" aria-describedby="e-name" />
-                <p class="err" id="e-name" role="alert"></p>
-              </div>
-
-              <div class="field">
-                <label for="f-email" data-i18n="contact.f.email">Email address (optional)</label>
-                <input id="f-email" name="email" type="email" autocomplete="email" maxlength="120" data-i18n-placeholder="contact.ph.email" placeholder="you@example.com" aria-describedby="e-email" />
-                <p class="err" id="e-email" role="alert"></p>
-              </div>
-
-              <div class="field-row">
-                <div class="field">
-                  <label for="f-service" data-i18n="contact.f.service">Service required</label>
-                  <select id="f-service" name="service" aria-describedby="e-service"></select>
-                  <p class="err" id="e-service" role="alert"></p>
-                </div>
-                <div class="field">
-                  <label for="f-language" data-i18n="contact.f.language">Preferred language</label>
-                  <select id="f-language" name="language" aria-describedby="e-language"></select>
-                  <p class="err" id="e-language" role="alert"></p>
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="f-duration" data-i18n="contact.f.duration">Approximate finished video duration</label>
-                <input id="f-duration" name="duration" type="text" maxlength="60" data-i18n-placeholder="contact.ph.duration" placeholder="e.g. 10 minutes" aria-describedby="e-duration" />
-                <p class="err" id="e-duration" role="alert"></p>
-              </div>
-
-              <div class="field">
-                <label for="f-details" data-i18n="contact.f.details">Project details</label>
-                <textarea id="f-details" name="details" rows="5" maxlength="1200" data-i18n-placeholder="contact.ph.details" placeholder="Tell me about your video, source material and any references." aria-describedby="e-details"></textarea>
-                <p class="err" id="e-details" role="alert"></p>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-lg btn-block">
-                <span data-icon="whatsapp"></span><span data-i18n="contact.submit">Open WhatsApp with My Inquiry</span>
-              </button>
-              <p class="fine-print" data-i18n="contact.note">
-                This form does not send your details to a server. It opens WhatsApp with your inquiry already written, and
-                you still need to press send in WhatsApp.
-              </p>
-              <p class="form-status" id="form-status" role="status" aria-live="polite" hidden>
-                <span id="form-status-text"></span>
-                <a id="form-status-link" target="_blank" rel="noopener noreferrer" href="#contact"></a>
-              </p>
-            </form>
           </div>
         </div>
       </section>

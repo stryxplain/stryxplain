@@ -154,7 +154,7 @@ window.STRYX_I18N = {
       "Yes. If your project doesn't fit the listed services, message me on WhatsApp with what you need and ask for a custom quote.",
     "faq.q6": "How can I share my project details?",
     "faq.a6":
-      "Use the inquiry form in the Contact section, or message me directly on WhatsApp. Mention the video type, language, approximate finished duration and any notes or references.",
+      "Message me directly on WhatsApp. Mention the video type, language, approximate finished duration and any notes or references.",
     "faq.q7": "Can I request thumbnail designs?",
     "faq.a7":
       "Yes. 3 different thumbnail designs for one video start at ₹39, according to the current offer.",
@@ -165,7 +165,7 @@ window.STRYX_I18N = {
     /* Contact */
     "contact.eyebrow": "Contact",
     "contact.title": "Let's discuss your project",
-    "contact.sub": "WhatsApp is the fastest way to reach me. Tap a button below or fill in the form to start a chat.",
+    "contact.sub": "WhatsApp is the fastest way to reach me. Tap a button below to start a chat.",
     "contact.whatsapp": "WhatsApp",
     "contact.instagram": "Instagram",
     "contact.email": "Email",
@@ -350,7 +350,7 @@ window.STRYX_I18N = {
       "Haan. Agar aapka project listed services mein fit nahi hota, to WhatsApp par apni zarurat batayein aur custom quote maangein.",
     "faq.q6": "Main apne project ki details kaise share karoon?",
     "faq.a6":
-      "Contact section ka inquiry form use karein, ya seedha WhatsApp par message karein. Video ka type, language, approximate finished duration aur koi notes ya references zaroor batayein.",
+      "Seedha WhatsApp par message karein. Video ka type, language, approximate finished duration aur koi notes ya references zaroor batayein.",
     "faq.q7": "Kya main thumbnail designs maang sakta hoon?",
     "faq.a7":
       "Haan. Ek video ke liye 3 alag thumbnail designs ₹39 se shuru hote hain, current offer ke hisaab se.",
@@ -362,7 +362,7 @@ window.STRYX_I18N = {
     "contact.eyebrow": "Contact",
     "contact.title": "Chaliye aapke project par baat karte hain",
     "contact.sub":
-      "WhatsApp mujhse contact karne ka sabse tez tareeka hai. Neeche kisi button par tap karein ya form bharkar chat shuru karein.",
+      "WhatsApp mujhse contact karne ka sabse tez tareeka hai. Chat shuru karne ke liye neeche kisi button par tap karein.",
     "contact.whatsapp": "WhatsApp",
     "contact.instagram": "Instagram",
     "contact.email": "Email",

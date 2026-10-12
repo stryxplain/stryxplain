@@ -50,7 +50,7 @@ window.STRYX_PORTFOLIO = [
   },
   {
     id: "manhwa-2",
-    title: "He Became a High School Principal With a God-Tier System… ! | Manhwa Explained (Part 2)",
+    title: "He Got Worst Flame Seed... Then he got a Secret Market Awakened taken!",
     category: "manhwa",
     youtubeId: "56IK4spMb74",
     youtubeUrl: "",

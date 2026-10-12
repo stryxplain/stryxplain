@@ -380,116 +380,6 @@
     btn.closest(".faq-item").classList.toggle("open", openFaq[i]);
   }
 
-  /* ---------- Contact form ---------- */
-  var LANG_OPTIONS = [
-    { value: "English", key: "contact.lang.en" },
-    { value: "Hindi / Hinglish", key: "contact.lang.hi" },
-    { value: "Other", key: "contact.lang.other" },
-  ];
-
-  function renderFormOptions() {
-    var svc = $("#f-service");
-    var lng = $("#f-language");
-    var svcVal = svc.value;
-    var lngVal = lng.value;
-    svc.innerHTML =
-      '<option value="">' + esc(t("contact.ph.select")) + "</option>" +
-      SERVICES.map(function (s) {
-        return '<option value="' + esc(s.name) + '">' + esc(t("svc." + s.id + ".title")) + "</option>";
-      }).join("") +
-      '<option value="Other / not sure yet">' + esc(t("contact.opt.other")) + "</option>";
-    lng.innerHTML =
-      '<option value="">' + esc(t("contact.ph.select")) + "</option>" +
-      LANG_OPTIONS.map(function (o) { return '<option value="' + esc(o.value) + '">' + esc(t(o.key)) + "</option>"; }).join("");
-    svc.value = svcVal;
-    lng.value = lngVal;
-    // Re-translate any visible error messages
-    $$(".err").forEach(function (el) {
-      var k = el.getAttribute("data-err-key");
-      if (k) el.textContent = t(k);
-    });
-  }
-
-  function setError(field, key) {
-    var el = $("#e-" + field);
-    var input = $("#f-" + field);
-    if (key) {
-      el.textContent = t(key);
-      el.setAttribute("data-err-key", key);
-      input.setAttribute("aria-invalid", "true");
-    } else {
-      el.textContent = "";
-      el.removeAttribute("data-err-key");
-      input.removeAttribute("aria-invalid");
-    }
-  }
-
-  function validateForm() {
-    var v = {
-      name: $("#f-name").value.trim(),
-      email: $("#f-email").value.trim(),
-      service: $("#f-service").value,
-      language: $("#f-language").value,
-      duration: $("#f-duration").value.trim(),
-      details: $("#f-details").value.trim(),
-    };
-    var errors = {
-      name: v.name ? null : "contact.err.name",
-      email: !v.email || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email) ? null : "contact.err.email",
-      service: v.service ? null : "contact.err.service",
-      language: v.language ? null : "contact.err.language",
-      duration: v.duration ? null : "contact.err.duration",
-      details: v.details ? null : "contact.err.details",
-    };
-    var order = ["name", "email", "service", "language", "duration", "details"];
-    var firstBad = null;
-    order.forEach(function (f) {
-      setError(f, errors[f]);
-      if (errors[f] && !firstBad) firstBad = f;
-    });
-    return { values: v, firstInvalid: firstBad };
-  }
-
-  // Inquiry text is always written in English so it is easy for me to read.
-  function buildInquiryMessage(v) {
-    var lines = [
-      "Hello stryXplain! I would like to discuss a video editing project.",
-      "",
-      "Name: " + v.name,
-    ];
-    if (v.email) lines.push("Email: " + v.email);
-    lines.push(
-      "Service: " + v.service,
-      "Preferred language: " + v.language,
-      "Approximate finished video duration: " + v.duration,
-      "Project details: " + v.details,
-      "",
-      "Please share pricing and the next steps."
-    );
-    return lines.join("\n");
-  }
-
-  function onSubmit(event) {
-    event.preventDefault();
-    var result = validateForm();
-    if (result.firstInvalid) {
-      $("#f-" + result.firstInvalid).focus();
-      $("#form-status").hidden = true;
-      return;
-    }
-    var url = waLink(buildInquiryMessage(result.values));
-    // Note: "noopener" in window.open() would make it return null, so detach the opener manually instead.
-    var win = window.open(url, "_blank");
-    if (win) { try { win.opener = null; } catch (err) { /* ignore */ } }
-    var status = $("#form-status");
-    var link = $("#form-status-link");
-    $("#form-status-text").textContent = t("contact.status.opened") + " ";
-    link.textContent = t("contact.status.manual");
-    link.setAttribute("href", url);
-    link.hidden = !!win; // show the manual link only if the pop-up looks blocked
-    status.hidden = false;
-  }
-
   /* ---------- Navigation ---------- */
   function closeMenu() {
     var btn = $("#nav-toggle");
@@ -569,13 +459,6 @@
     renderPortfolio(animate);
     renderPricing(animate);
     renderFaq();
-    renderFormOptions();
-    var link = $("#form-status-link");
-    var text = $("#form-status-text");
-    if (!$("#form-status").hidden) {
-      text.textContent = t("contact.status.opened") + " ";
-      link.textContent = t("contact.status.manual");
-    }
   }
 
   /* ---------- Start ---------- */
@@ -624,14 +507,6 @@
       else if (e.key === "Home") next = buttons[0];
       else if (e.key === "End") next = buttons[buttons.length - 1];
       if (next) { e.preventDefault(); next.focus(); }
-    });
-
-    var form = $("#inquiry-form");
-    form.addEventListener("submit", onSubmit);
-    // Clear an error as soon as the visitor fixes the field
-    ["name", "email", "service", "language", "duration", "details"].forEach(function (f) {
-      $("#f-" + f).addEventListener("input", function () { if ($("#e-" + f).textContent) setError(f, null); });
-      $("#f-" + f).addEventListener("change", function () { if ($("#e-" + f).textContent) setError(f, null); });
     });
   }
 

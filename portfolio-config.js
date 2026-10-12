@@ -38,7 +38,7 @@
 
 window.STRYX_PORTFOLIO = [
     {
-    id: "manhwa-1",
+    id: "Anime",
     title: "He Became a High School Principal With a God-Tier System… ! | Manhwa Explained",
     category: "manhwa",
     youtubeId: "kRtwZgoFVvA",

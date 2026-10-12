@@ -60,28 +60,28 @@ window.STRYX_PORTFOLIO = [
     placeholder: false,
   },
   {
-    id: "demo-english",
+    id: "English Anime",
     title: "English + Subtitles — sample slot",
     category: "english",
-    youtubeId: "",
+    youtubeId: "uBz9Kiaa7C4",
     youtubeUrl: "",
     videoSrc: "",
     thumbnail: "",
     thumbAlt: "",
     placeholder: true,
   },
+  
   {
-    id: "demo-thumbnails",
-    title: "Thumbnail Design — sample slot",
+    id: "thumb-1",
+    title: "Manhwa Explained thumbnail",
     category: "thumbnails",
     youtubeId: "",
     youtubeUrl: "",
     videoSrc: "",
-    thumbnail: "",
-    thumbAlt: "",
-    placeholder: true,
+    thumbnail: "thumb-1.jpg",
+    thumbAlt: "Manhwa explained video ka thumbnail",
+    placeholder: false,
   },
-
   /* ---- EXAMPLE of a real project. To use it, delete the comment markers around it ----
   {
     id: "my-first-manhwa-recap",
